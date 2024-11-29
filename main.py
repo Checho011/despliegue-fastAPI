@@ -5,7 +5,7 @@ import joblib
 app = FastAPI()
 
 # Cargar el modelo
-model_pipeline = joblib.load('model_pipeline.joblib')
+model_pipeline = joblib.load('pipeline.joblib')
 
 class SalaryPredictionInput(BaseModel):
     work_year: int
